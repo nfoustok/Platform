@@ -1,0 +1,35 @@
+.background    { background: rgb(64, 190, 255);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.ice          {  background: rgb(185, 214, 229); }
+.wall          {  background: rgb(38, 108, 145);   }
+
+.actor  { position: absolute;  }
+.fish   { background-image: url("fish.gif"); }
+.player {  background-image: url("nolan.gif"); }
+.shark { background-image: url("shark.gif"); }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background-image: url("nolansad.gif");
+}
+.won .player {
+	background-image: url("nolanwonsp.gif");
+	transform: rotate(-30deg);
+	/*transform: scale(1.5,1.5);
+	border-style: solid;
+    border-width: 5px;*/
+     
+}
+
+.end .player {
+  background-image: url("nolanwon.gif");
+}
+
